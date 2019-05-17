@@ -3,8 +3,8 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>容易忘的各种命令（更新中） | Arthesfan</title>
-<link rel="shortcut icon" href="https://arthesfan.github.io//favicon.ico?v=1557383178821">
+<title>容易忘的各种命令（python相关） | Arthesfan</title>
+<link rel="shortcut icon" href="https://arthesfan.github.io//favicon.ico?v=1558061199770">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://arthesfan.github.io//styles/main.css">
 
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://arthesfan.github.io/">
-  <img class="avatar" src="https://arthesfan.github.io//images/avatar.png?v=1557383178821" alt="">
+  <img class="avatar" src="https://arthesfan.github.io//images/avatar.png?v=1558061199770" alt="">
   </a>
   <h1 class="site-title">
     Arthesfan
@@ -54,24 +54,33 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              容易忘的各种命令（更新中）
+              容易忘的各种命令（python相关）
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2019-04-28 ·
+                · 2019-05-17 ·
               </time>
               
             </div>
             
             <div class="post-content">
-              <pre><code>fuser -u /dev/nvidia* 
+              <pre><code>python -c 'import tensorflow as tf; print(tf.sysconfig.get_lib() + &quot;/python/_pywrap_tensorflow_internal.so&quot;)' | xargs ldd
 </code></pre>
-<p>用来查看占用显存的进程（一般是训练中断显存未释放的情况）</p>
+<p>查看tensorflow的python链接库，参见<a href="https://github.com/tensorflow/tensorflow/issues/10827">link</a></p>
 
             </div>
           </article>
         </div>
     
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://arthesfan.github.io//post/rong-yi-wang-de-ge-chong-ming-ling-geng-xin-zhong-linux-xiang-guan">
+              <h3 class="post-title">
+                容易忘的各种命令（更新中，linux相关）
+              </h3>
+            </a>
+          </div>  
         
 
         
